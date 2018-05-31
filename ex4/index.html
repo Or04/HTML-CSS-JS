@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="includes/main.js"></script>
+    <title>Form</title>
+</head>
+<body>
+        <div>
+    <form name="form" action="http://html5-book.co.il/teach/forms/get_form2.php "onsubmit="return valid(this)" method="get" autocomplete="on"  >
+   <p> <label>   
+        User Name:
+       <input required title="you forgot to fill it"  type="text" name="fullName">
+    </label></p>
+
+   <p><label>
+        password:
+           <input type="password" pattern="([a-z0-9]{6})" title="password must be six notes 
+           with digits between 0-9 and a lower case letters." name="pass" maxlength="8">
+       </label></p>
+        
+       <p><label>
+                mail:
+               <input type="email" name="mail">
+            </label></p>
+           
+           <p> <label>
+                website:
+                   <input type="url" name="website">
+                </label></p>
+
+                <p><label>
+                         phone:
+                       <input type="tel" name="phone">
+                    </label></p>
+
+                   <p> <label>
+                            amount of coffee for day:
+                           <input type="number" name="coffee" min="0">
+                        </label></p>
+
+                        <p><label>
+                            coffee temper: 
+                        0<input type="range" name="temper" min="0" max="100" value="50"  >
+                            </label>100</p>
+
+                            <p><label>
+                                address:
+                               <input type="address" name="address">
+                            </label></p>
+                            
+                            <p><label>
+                                Hobbies:<br>
+                                <label>reading</label>
+                                <input type="checkbox" name="interests[]">
+                                <label>Dance</label>
+                                <input type="checkbox" name="interests[]">
+                                <label>sleep</label>
+                                <input type="checkbox" name="interests[]">
+                                <label>eat</label>
+                                <input type="checkbox" name="interests[]">
+                            </label></p>
+    
+                            <p><label>
+                                gander:<br>
+                                male
+                               <input type="radio" name="gander">
+                               female
+                               <input type="radio" name="gander">
+                            </label></p>
+                            
+                            <p><label>
+                                age:
+                               <input type="number" name="age" min="1" >
+                            </label></p>
+            
+    
+            <input type="submit" value="submit">
+    
+    </form>
+</div>
+
+</body>
+</html>
+
